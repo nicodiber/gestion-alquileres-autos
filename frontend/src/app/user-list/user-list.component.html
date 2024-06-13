@@ -1,0 +1,10 @@
+<h2>Listado de Usuarios</h2>
+
+<ul>
+    <li *ngFor="let user of users">
+        <p>Nombre: {{ user.nombre }} {{ user.apellido }}</p>
+        <p>Email: {{ user.email }}</p>
+        <button (click)="deleteUser(user._id)">Eliminar</button>
+        <hr>
+    </li>
+</ul>
